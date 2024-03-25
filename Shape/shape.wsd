@@ -1,0 +1,16 @@
+@startuml
+class Shape {
+    - m_width: double
+    - m_height: double
+    + Shape(width: double, height: double)
+    + getWidth() const: double
+    + getHeight() const: double
+    + setWidth(width: double): void
+    + setHeight(height: double): void
+    + getArea() const: double
+    + getPerimeter() const: double
+    + operator==(other: Shape) const: bool
+    + saveToFile(fileName: std::string) const: void
+    + loadFromFile(fileName: std::string): voidd
+}
+@enduml

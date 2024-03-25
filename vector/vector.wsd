@@ -1,0 +1,20 @@
+@startuml
+class Vector {
+    - x : double
+    - y : double
+    - z : double
+    + Vector()
+    + Vector(x: double, y: double, z: double)
+    + getLength() : double
+    + getAngleX() : double
+    + getAngleY() : double
+    + getAngleZ() : double
+    + operator+(other: Vector) : Vector
+    + operator-(other: Vector) : Vector
+    + operator*(scalar: double) : Vector
+    + operator==(other: Vector) : bool
+    + saveToFile(filename: std::string) : void
+    + loadFromFile(filename: std::string) : void
+}
+
+@enduml

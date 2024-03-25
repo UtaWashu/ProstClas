@@ -1,0 +1,25 @@
+@startuml
+class Time {
+    - hours : int
+    - minutes : int
+    - seconds : int
+    + Time()
+    + Time(hours: int, minutes: int, seconds: int)
+    + getCurrentTime() : void
+    + setTime(hours: int, minutes: int, seconds: int) : void
+    + addHours(hours: int) : void
+    + addMinutes(minutes: int) : void
+    + addSeconds(seconds: int) : void
+    + toSeconds() : int
+    + toHours() : int
+    + toMinutes() : int
+    + toString() : std::string
+    + getHours() : int
+    + setHours(hours: int) : void
+    + getMinutes() : int
+    + setMinutes(minutes: int) : void
+    + getSeconds() : int
+    + setSeconds(seconds: int) : void
+    + isEqual(other: Time) : bool
+}
+@enduml

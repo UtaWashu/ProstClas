@@ -1,0 +1,17 @@
+@startuml
+class fraction {
+    - numerator : int
+    - denominator : int
+    + fraction(num: int, den: int)
+    + getNumerator() : int
+    + getDenominator() : int
+    + setNumerator(num: int) : void
+    + setDenominator(den: int) : void
+    + add(frac: fraction) : fraction
+    + subtract(frac: fraction) : fraction
+    + multiply(frac: fraction) : fraction
+    + divide(frac: fraction) : fraction
+    + isEqual(frac: fraction) : bool
+}
+
+@enduml
